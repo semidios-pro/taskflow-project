@@ -1,0 +1,95 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f6f8;
+padding:30px;
+}
+
+header{
+text-align:center;
+margin-bottom:30px;
+}
+
+h1{
+font-size:32px;
+margin-bottom:5px;
+}
+
+main{
+max-width:600px;
+margin:auto;
+}
+
+form{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+input{
+flex:1;
+padding:10px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px 15px;
+border:none;
+background:#0077ff;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#005fd1;
+}
+
+.stats{
+display:flex;
+justify-content:space-between;
+background:white;
+padding:15px;
+border-radius:5px;
+margin-bottom:20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tasks ul{
+list-style:none;
+}
+
+.tasks li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+padding:10px;
+margin-bottom:10px;
+border-radius:5px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.task-left{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.completed{
+text-decoration:line-through;
+color:gray;
+}
+
+.delete-btn{
+background:red;
+padding:5px 10px;
+border-radius:5px;
+}
