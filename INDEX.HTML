@@ -1,0 +1,51 @@
+s<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Tareas</title>
+  <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+  <header>
+    <h1>Mis Tareas</h1>
+    <button id="darkModeBtn" class="btn-dark">🌙 Oscuro</button>
+  </header>
+
+  <div class="main-container">
+    <div class="container">
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Escribe una tarea...">
+        <button id="addBtn">Añadir</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+
+    <aside class="stats-panel">
+      <h2>Estadísticas</h2>
+      <div class="stat-item">
+        <span class="stat-label">Total</span>
+        <span class="stat-value" id="totalCount">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Completadas</span>
+        <span class="stat-value" id="completedCount">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Pendientes</span>
+        <span class="stat-value" id="pendingCount">0</span>
+      </div>
+      <div class="progress-container">
+        <div class="progress-label">Progreso</div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-text"><span id="percentage">0</span>%</div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
