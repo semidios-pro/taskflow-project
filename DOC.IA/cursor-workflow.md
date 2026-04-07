@@ -174,3 +174,106 @@ Aplicar buenas prácticas de desarrollo
 Aumentar la escalabilidad del proyecto
 
 El uso de herramientas de IA como Cursor ha facilitado la optimización del código, manteniendo siempre una revisión manual final para asegurar la calidad.
+
+
+
+## Uso de MCP en Cursor
+
+### ¿Qué es MCP?
+
+MCP (Model Context Protocol) es un protocolo abierto que permite conectar herramientas de inteligencia artificial con fuentes externas como archivos locales, repositorios o servicios.
+
+En Cursor, MCP permite que la IA acceda directamente al contexto real del proyecto, en lugar de responder únicamente de forma genérica.
+
+---
+
+### Configuración realizada
+
+Para esta práctica he configurado un servidor MCP de tipo **filesystem** dentro de Cursor.
+
+Pasos realizados:
+
+* Acceso a `Settings`
+* Navegación a `Tools & MCP`
+* Uso de la opción **Add Custom MCP**
+* Configuración mediante un archivo JSON utilizando `npx`
+
+El objetivo era permitir que la IA pudiera acceder directamente a los archivos del proyecto TaskFlow.
+
+---
+
+### Servidor utilizado
+
+Se ha utilizado el servidor **filesystem**, que permite trabajar con los archivos locales del proyecto.
+
+Este tipo de servidor permite:
+
+* Leer archivos del proyecto
+* Analizar estructura de carpetas
+* Buscar funciones concretas
+* Inspeccionar código directamente
+* Acceder a documentación interna
+
+---
+
+### Comprobación del funcionamiento
+
+Tras añadir la configuración, el servidor `filesystem` apareció correctamente dentro de la sección de MCP en Cursor, lo que indica que la conexión se realizó correctamente.
+
+Esto confirma que el entorno quedó preparado para que la IA pudiera interactuar con el proyecto.
+
+---
+
+### Consultas planteadas
+
+Para comprobar el uso del servidor MCP, se plantearon las siguientes consultas sobre el proyecto:
+
+1. Leer el archivo `app.js` y explicar la función `createTask`
+2. Buscar dónde se calcula el porcentaje de tareas completadas
+3. Analizar `index.html` y describir la sección de estadísticas
+4. Listar los archivos dentro de la carpeta `docs`
+5. Buscar funciones relacionadas con filtros en `app.js`
+
+Estas consultas están diseñadas para validar que la IA puede acceder al contenido real del proyecto.
+
+---
+
+### Nota sobre la ejecución de consultas
+
+Debido a las limitaciones del plan gratuito de Cursor, no fue posible ejecutar todas las consultas dentro del propio entorno.
+
+Sin embargo:
+
+* El servidor MCP quedó correctamente configurado
+* El entorno estaba preparado para su uso
+* Se definieron consultas realistas y directamente aplicables al proyecto
+
+Esto permite entender claramente el funcionamiento de MCP y cómo se utilizaría en un entorno real.
+
+---
+
+### Utilidad de MCP en proyectos reales
+
+MCP permite mejorar significativamente el uso de IA en desarrollo, ya que aporta contexto real.
+
+Algunos usos prácticos:
+
+* Analizar proyectos grandes sin necesidad de copiar código manualmente
+* Buscar funciones o componentes concretos
+* Consultar documentación interna del proyecto
+* Integrar herramientas externas (repositorios, APIs, bases de datos)
+* Mejorar la precisión de las respuestas de la IA
+
+---
+
+### Conclusión
+
+La integración de MCP en Cursor permite dar un paso más allá en el uso de inteligencia artificial en desarrollo.
+
+En esta práctica he comprendido:
+
+* Cómo conectar herramientas externas a la IA
+* Cómo preparar un entorno con contexto real
+* Cómo se pueden mejorar los flujos de trabajo con este tipo de integración
+
+Aunque el uso práctico estuvo limitado por el plan gratuito, la configuración y el planteamiento de consultas han permitido entender claramente su utilidad en proyectos reales.
