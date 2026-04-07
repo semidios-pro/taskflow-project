@@ -1,10 +1,16 @@
 CONCEPTOS FUNDAMENTALES CON LA IA:
-SEGUN CHATGPT
 
-🔒 Closures (cierres)
+
+### SEGUN CHATGPT
+
+### 🔒 Closures (cierres)
+
+
 Es cuando una función “recuerda” las variables de fuera aunque ya haya terminado.
+
 👉 Ejemplo simple:
 
+```javascript
 function contador() {
   let numero = 0;
 
@@ -17,13 +23,15 @@ function contador() {
 const contar = contador();
 console.log(contar()); // 1
 console.log(contar()); // 2
-
+codigo
 💡 Aunque contador() ya terminó, la función interna sigue recordando numero.
 👉 Idea clave:
 Una función guarda el acceso a variables externas.
 
+```
 
-🔄 Event Loop
+
+### 🔄 Event Loop
 Es como el “organizador” de JavaScript.
 
 👉 JavaScript hace una cosa a la vez, pero el event loop:
@@ -32,7 +40,7 @@ Maneja tareas
 Decide cuándo ejecutar cada cosa
 
 👉 Ejemplo:
-
+```
 console.log("A");
 
 setTimeout(() => {
@@ -51,13 +59,13 @@ B
 
 👉 Idea clave:
 El event loop gestiona cuándo se ejecuta el código asíncrono.
+```
 
-
-🌐 DOM (Document Object Model)
+### 🌐 DOM (Document Object Model)
 Es cómo el navegador representa tu HTML como objetos que JavaScript puede usar.
 
 👉 Ejemplo HTML:
-
+```
 <h1 id="titulo">Hola</h1>
 
 👉 JavaScript:
@@ -68,13 +76,13 @@ document.getElementById("titulo").textContent = "Hola mundo";
 
 👉 Idea clave:
 El DOM permite modificar la web con JavaScript.
+```
 
-
-⬆️ Hoisting
+### ⬆️ Hoisting
 Es cuando JavaScript “sube” declaraciones al principio.
 
 👉 Ejemplo:
-
+```
 console.log(x);
 var x = 5;
 
@@ -98,23 +106,30 @@ function saludar() {
 
 ✔️ Esto funciona por hoisting.
 👉 Idea clave:Las variables y funciones se “declaran” antes de ejecutarse.
+```
 
 
 CONCEPTOS FUNDAMENTALES CON LA IA:
 SEGUN CLAUDE
 
-Closures: 
+### Closures: 
 son funciones que "recuerdan" el entorno léxico en el que fueron creadas, incluso después de que ese entorno haya dejado de estar activo. Esto permite encapsular estado privado sin exponer variables al exterior, un patrón muy utilizado en módulos y funciones de fábrica.
 
-El Event Loop:
+
+### El Event Loop:
 es el mecanismo que hace posible la asincronía en JavaScript a pesar de ser un lenguaje de un solo hilo. Coordina la pila de llamadas (call stack), la cola de tareas (task queue) y las microtasks, ejecutando código de forma no bloqueante.
 
-El DOM:
+
+### El DOM:
 (Document Object Model) es la representación en memoria del documento HTML como un árbol de nodos. El navegador lo construye al cargar la página y JavaScript puede manipularlo para leer o modificar la estructura, los estilos y el contenido de manera dinámica.
 
-Hoisting:
+
+### Hoisting:
 es el comportamiento por el cual las declaraciones de variables (var) y funciones son "elevadas" al inicio de su ámbito antes de la ejecución. Las variables declaradas con var se hoistean pero con valor undefined; las funciones declaradas con function se 
-
-
 hoistean completamente. let y const también se hoistean pero quedan en la Temporal Dead Zone hasta su declaración.
+
+### representaciones
+
+
+<img width="1440" height="1764" alt="image" src="https://github.com/user-attachments/assets/cceec662-9d88-4fde-b025-06cccaa53af8" />
 
